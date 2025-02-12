@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>sakuni's Portfolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="about-me">
+            <h2>About Me</h2>
+            <section id="about-earnings" class="earnings">
+                <h3>My Earnings</h3>
+                <p>Robux: R$ 31,748</p>
+                <p>USD: $87.22</p>
+                <p>My online name is sakuni, I'm currently a 14 years old freshman and plan to major in computer science or advanced mathematics, something around that line of work.</p>
+            </section>
+        </section>
+        <section id="projects" class="showcase">
+            <h2>Projects</h2>
+            <div class="showcase-item">
+                <div class="carousel">
+                    <button class="arrow left-arrow" onclick="prevImage(0)">&#10094;</button>
+                    <img src="https://cdn.discordapp.com/attachments/1169133111049715723/1329298147498790912/image.png?ex=6789d4df&is=6788835f&hm=fbc91f555428640a5c2a0d1316be1897afd5137664170c165a5f86fbd94494be&" alt="Project Image Placeholder" class="showcase1">
+                    <button class="arrow right-arrow" onclick="nextImage(0)">&#10095;</button>
+                </div>
+                <p>Developer of A Card RNG Game 2</p>
+                <p1>221k Visits</p1>
+            </div>
+            <div class="showcase-item">
+                <div class="carousel">
+                    <button class="arrow left-arrow" onclick="prevImage(1)">&#10094;</button>
+                    <img src="https://via.placeholder.com/150" alt="gui too bad to flex 😔" class="showcase1">
+                    <button class="arrow right-arrow" onclick="nextImage(1)">&#10095;</button>
+                </div>
+                <p>Developer of A Card RNG Game 1</p>
+                <p1>928k Visits</p1>
+            </div>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sql/sql-original.svg" alt="SQL">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" alt="Lua">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby">
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:sakunitmtt@gmail.com">sakunitmtt@gmail.com</a></p>
+            <p>Discord: <a>s5ni</a></p>
+            <p>Discord Alternative: <a>s9ni</a></p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2025 sakuni studios.</p>
+    </footer>
+    <script src="Gui.js"></script>
+</body>
+</html>

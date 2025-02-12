@@ -1,0 +1,227 @@
+body {
+    background-color: #140b18;
+    color: #333;
+    margin: 0;
+    font-family: 'Quicksand', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+header {
+    background-color: #4a4e69;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #fff;
+}
+
+nav {
+    background-color: #22223b;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f2e9e4;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.about-me, .showcase, .skills {
+    background: #22112b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-me h2, .showcase h2, .skills h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #c978ff;
+}
+
+.showcase-item {
+    margin: 20px 0;
+    position: relative;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.earnings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.earnings p {
+    margin: 5px 0;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.showcase-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #6a5acd;
+    transition: color 0.3s ease-in-out;
+}
+
+.showcase-item p:hover {
+    color: #ff6347;
+}
+
+.footer {
+    background-color: #4a4e69;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: slide 3s infinite;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.skills-icons img:hover {
+    transform: scale(1.2);
+}
+
+h2 {
+    color: #9421a5;
+}
+
+h3 {
+    color: #b427ca;
+}
+
+p {
+    color: #c223db;
+}
+
+p1 {
+    color: #c223db;
+}
+
+@keyframes slide {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
